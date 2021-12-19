@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #282c34;
+  height: 100px;
+}
+
+.navbarMenu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+  margin: 10px;
+}
+
+.links {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.icon {
+  height: 60px;
+  margin: 30px;
+}
+
+.downloads {
+  display: flex;
+  justify-content: center;
+  background-color: #616a72;
+  color: aliceblue;
+  height: 22px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.iconDownload {
+  margin: 5px;
+  height: 15px;
+  width: 17px;
+}
+.name {
+  color: antiquewhite;
+}
+.iconUser {
+  height: 40px;
+  width: 40px;
+}
+
+.dropdownshop {
+  position: absolute;
+  color: aliceblue;
+  background-color: #282c34;
+}
+
+.dropdowncommunity {
+  position: absolute;
+  color: aliceblue;
+  background-color: #282c34;
+}
+
+.dropdownuser {
+  position: absolute;
+  color: aliceblue;
+  background-color: #282c34;
+}

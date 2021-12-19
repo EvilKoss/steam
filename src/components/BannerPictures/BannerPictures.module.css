@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  height: 1000px;
+}
+
+.cover {
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  padding-left: 250px;
+}
+
+.img {
+  width: 616px;
+  height: 353px;
+}
+
+.gts {
+  width: 33px;
+  height: 46px;
+}
+
+.pickers {
+  display: flex;
+  margin-left: 360px;
+}
+
+.picker {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0;
+}
+
+.arrowButton {
+  padding: 10px 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background: 0;
+}
+
+.arrowButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

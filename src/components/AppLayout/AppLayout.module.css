@@ -1,0 +1,10 @@
+.container {
+  display: grid;      
+  grid-template: 10% 1fr / 1fr ;
+  background-image: linear-gradient(to right, black , rgb(3, 3, 134), rgb(3, 3, 134), black);
+}
+
+.content {
+  display: grid;      
+  grid-template: 1fr / 20% 1fr ;
+}

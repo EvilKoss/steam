@@ -1,0 +1,13 @@
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  color: #66c0f4;
+}
+
+.links { 
+  text-decoration: none;
+  color: darkgrey;
+}

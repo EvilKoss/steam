@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  height: 1000px;
+  color: darkgrey;
+  display: flex;
+  flex-direction: row;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.input {
+  margin: 5px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 4px;
+  background: #6fa720;
+}
+
+.li {
+  color: darkgrey;
+}
+
+.links { 
+  text-decoration: none;
+}
