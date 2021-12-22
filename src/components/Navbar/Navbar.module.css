@@ -19,6 +19,13 @@
   color: antiquewhite;
 }
 
+.link {
+  text-decoration: none;
+  color: antiquewhite;
+  font-family: 'Brush Script MT', cursive;
+  color: #66c0f4;
+}
+
 .icon {
   height: 60px;
   margin: 30px;

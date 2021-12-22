@@ -3,9 +3,7 @@ import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const [hiddenPopupShop, setHiddenPopupShop] = useState(true);
   const [hiddenPopupCommunity, setHiddenPopupCommunity] = useState(true);
-  const [hiddenPopupUser, setHiddenPopupUser] = useState(true);
 
   return (
     <div className={styles.container}>
@@ -18,56 +16,9 @@ export default function Navbar() {
       </Link>
 
       <div className={styles.navbarMenu}>
-        <div
-          onMouseOver={() => {
-            setHiddenPopupShop(false);
-          }}
-          onMouseOut={() => {
-            setHiddenPopupShop(true);
-          }}
-        >
-          <Link className={styles.links} to={"/"}>
-            МАГАЗИН
-          </Link>
-          <div
-            hidden={hiddenPopupShop}
-            className={styles.dropdownshop}
-            onMouseOver={() => {
-              setHiddenPopupShop(false);
-            }}
-            onMouseOut={() => {
-              setHiddenPopupShop(true);
-            }}
-          >
-            <Link className={styles.links} to={"/"}>
-              ГЛАВНАЯ
-            </Link>
-            <br />
-            <Link className={styles.links} to={"/recommendations"}>
-              РЕКОМЕНДАЦИИ
-            </Link>
-            <br />
-            <a className={styles.links} href={"https://www.google.com"}>
-              СПИСОК ЖЕЛАЕМОГО
-            </a>
-            <br />
-            <a className={styles.links} href={"https://www.google.com"}>
-              МАГАЗИН ОЧКОВ
-            </a>
-            <br />
-            <a className={styles.links} href={"https://www.google.com"}>
-              НОВОСТИ
-            </a>
-            <br />
-            <a className={styles.links} href={"https://www.google.com"}>
-              СТАТИСТИКА
-            </a>
-            <br />
-            <a className={styles.links} href={"https://www.google.com"}>
-              О STEAM
-            </a>
-          </div>
-        </div>
+        <Link className={styles.links} to={"/"}>
+          МАГАЗИН
+        </Link>
       </div>
 
       <div className={styles.navbarMenu}>
@@ -79,7 +30,7 @@ export default function Navbar() {
             setHiddenPopupCommunity(true);
           }}
         >
-          СООБЩЕСТВО
+          DROP_DOWN
           <div
             hidden={hiddenPopupCommunity}
             className={styles.dropdowncommunity}
@@ -90,23 +41,23 @@ export default function Navbar() {
               setHiddenPopupCommunity(true);
             }}
           >
-            <Link className={styles.links} to={"https://www.google.com"}>
+            <Link className={styles.link} to={"https://www.google.com"}>
               ГЛАВНАЯ
             </Link>
             <br />
-            <Link className={styles.links} to={"https://www.google.com"}>
+            <Link className={styles.link} to={"https://www.google.com"}>
               ОБСУЖДЕНИЯ
             </Link>
             <br />
-            <Link className={styles.links} to={"https://www.google.com"}>
+            <Link className={styles.link} to={"https://www.google.com"}>
               МАСТЕРСКАЯ
             </Link>
             <br />
-            <Link className={styles.links} to={"https://www.google.com"}>
+            <Link className={styles.link} to={"https://www.google.com"}>
               ТОРГОВАЯ ПЛОЩАДКА
             </Link>
             <br />
-            <Link className={styles.links} to={"https://www.google.com"}>
+            <Link className={styles.link} to={"https://www.google.com"}>
               ТРАНСЛЯЦИИ
             </Link>
           </div>
@@ -114,58 +65,9 @@ export default function Navbar() {
       </div>
 
       <div className={styles.navbarMenu}>
-        <div
-          onMouseOver={() => {
-            setHiddenPopupUser(false);
-          }}
-          onMouseOut={() => {
-            setHiddenPopupUser(true);
-          }}
-        >
-          EViL_KoSS
-          <div
-            hidden={hiddenPopupUser}
-            className={styles.dropdownuser}
-            onMouseOver={() => {
-              setHiddenPopupUser(false);
-            }}
-            onMouseOut={() => {
-              setHiddenPopupUser(true);
-            }}
-          >
-            <Link className={styles.links} to={"https://www.google.com"}>
-              АКТИВНОСТЬ
-            </Link>
-            <br />
-            <Link className={styles.links} to={"https://www.google.com"}>
-              ПРОФИЛЬ
-            </Link>
-            <br />
-            <Link className={styles.links} to={"https://www.google.com"}>
-              ДРУЗЬЯ
-            </Link>
-            <br />
-            <Link className={styles.links} to={"https://www.google.com"}>
-              ГРУППЫ
-            </Link>
-            <br />
-            <Link className={styles.links} to={"https://www.google.com"}>
-              КОНТЕНТ
-            </Link>
-            <br />
-            <Link className={styles.links} to={"/desires"}>
-              ЖЕЛАНИЯ
-            </Link>
-            <br />
-            <Link className={styles.links} to={"https://www.google.com"}>
-              ИНВЕНТАРЬ
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.navbarMenu}>
-        <div className={styles.links}>ЧАТ</div>
+        <Link className={styles.links} to={"/desires"}>
+          СПИСОК ЖЕЛАЕМОГО
+        </Link>
       </div>
 
       <div className={styles.navbarMenu}>
