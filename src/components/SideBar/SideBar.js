@@ -5,33 +5,20 @@ export default function SideBar() {
   return (
     <div className={styles.conteiner}>
       ПОДАРОЧНЫЕ КАРТЫ STEAM
-      <a className={styles.links} href={"https://www.google.com"}>
-        <div>Теперь и в магазине Steam</div>
-      </a><br/>
+      <div className={styles.links}>Теперь и в магазине Steam</div>
+      <br />
       РЕКОМЕНДУЕТСЯ
-      <a className={styles.links} href={"https://www.google.com"}>
-        <div>Друзьями</div>
-      </a>
-      <a className={styles.links} href={"https://www.google.com"}>
-        <div>По меткам</div>
-      </a><br/>
+      <div className={styles.links}>Друзьями</div>
+      <div className={styles.links}>По меткам</div>
+      <br />
       СПИСКИ РЕКОМЕНДАЦИЙ
-      <a className={styles.links} href={"https://www.google.com"}>
-        <div>Рекомендации</div>
-      </a>
-      <a className={styles.links} href={"https://www.google.com"}>
-        <div>Новинки</div>
-      </a><br/>
+      <div className={styles.links}>Рекомендации</div>
+      <div className={styles.links}>Новинки</div>
+      <br />
       КАТЕГОРИИ
-      <a className={styles.links} href={"https://www.google.com"} >
-        <div>Лидеры продаж</div>
-      </a>
-      <a className={styles.links} href={"https://www.google.com"} >
-        <div>Новинки</div>
-      </a>
-      <a className={styles.links} href={"https://www.google.com"} >
-        <div>Скоро выйдут</div>
-      </a>
+      <div className={styles.links}>Лидеры продаж</div>
+      <div className={styles.links}>Новинки</div>
+      <div>Скоро выйдут</div>
     </div>
   );
 }

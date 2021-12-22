@@ -16,7 +16,7 @@ function Desires(props) {
           {element.description}
           <button
           className={styles.button}
-          onClick={() => {alert("da")}}
+          onClick={() => {alert("СПАСИБО ЗА ПОКУПКУ")}}
         >КУПИТЬ</button>
         </div>
       ))}

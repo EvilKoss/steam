@@ -41,25 +41,21 @@ export default function Navbar() {
               setHiddenPopupCommunity(true);
             }}
           >
-            <Link className={styles.link} to={"https://www.google.com"}>
+            <div className={styles.link}>
               ГЛАВНАЯ
-            </Link>
-            <br />
-            <Link className={styles.link} to={"https://www.google.com"}>
+            </div>
+            <div className={styles.link}>
               ОБСУЖДЕНИЯ
-            </Link>
-            <br />
-            <Link className={styles.link} to={"https://www.google.com"}>
+            </div>
+            <div className={styles.link}>
               МАСТЕРСКАЯ
-            </Link>
-            <br />
-            <Link className={styles.link} to={"https://www.google.com"}>
+            </div>
+            <div className={styles.link}>
               ТОРГОВАЯ ПЛОЩАДКА
-            </Link>
-            <br />
-            <Link className={styles.link} to={"https://www.google.com"}>
+            </div>
+            <div className={styles.link}>
               ТРАНСЛЯЦИИ
-            </Link>
+            </div>
           </div>
         </div>
       </div>
