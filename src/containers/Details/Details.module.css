@@ -1,6 +1,8 @@
 .Container {
   width: 100%;
   height: 1000px;
+  margin-top: 90px;
+  margin-left: 280px;
 }
 
 .img {
